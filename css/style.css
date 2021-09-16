@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito',sans-serif;
+    color: #757575;
+    height: 100vh;
+}
+.container{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* INDEX */
+
+
+/* Header */
+header{
+    background-color: #FFBE51;
+    box-shadow: 0px 4px 14px 0px #00000040;
+    margin-bottom: 50px;
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+header .container nav ul{
+    display: flex;
+    list-style: none;
+}
+header .container a {
+    text-decoration: none;
+    color: white;
+}
+header .container nav{
+    display: flex;
+    align-items: center;
+
+}
+header .container nav ul li{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+/* Banner */
+.banner{
+    margin-bottom: 50px;
+}
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    text-transform: uppercase;
+    max-width: 50%;
+    font-size: 40px;
+}
+.banner .container div{
+    width: calc(499px*1);
+    height: calc(351px*1);
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/* Servicos */
+.servicos{
+    background-color:#E5E5E5;
+    color: #000;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.servicos .container .opcoes{
+    display: flex;
+    justify-content: space-around;
+}
+.servicos h2{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.servicos .container .opcoes article p:nth-child(2){
+    font-weight: 600;
+}
+.servicos .container .opcoes article p{
+    margin: 5px 0;
+}
+.servicos .container .opcoes article div{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+
+}
+/* Bottom */
+.banner{
+    margin-bottom: 50px;
+}
+.bottom .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom .container div{
+    height: 355px;
+    width: 498px;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.bottom .container div.text{
+    text-align: left;
+}
+/* Footer */
+footer{
+    background-color: #FFBE51;
+    color: black;
+    padding: 30px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+footer .container{
+    margin-bottom: 80px;
+}
+footer .container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .content .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+footer .container ul a {
+    text-decoration: none;
+    color: black;
+}
+footer div.base {
+    width: 100%;
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 3px 0;
+    position: absolute;
+    bottom:0;
+}
+
+/* SERVICOS */
+
+/* Titulo */
+.center{
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.center h2{
+    color:#FFBE51;
+    text-transform: uppercase;
+
+}
+.center section.opcoes article .imagem{
+    background-color: #B1B1B1;
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.center section.opcoes article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center section.opcoes article .content{
+    max-width: 50%;
+}
+.center section.opcoes article .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

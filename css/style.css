@@ -127,7 +127,7 @@ header .container nav ul li{
     text-align: left;
 }
 /* Footer */
-footer{
+footer:not(.contatoFooter){
     background-color: #FFBE51;
     color: black;
     padding: 30px 0;
@@ -168,33 +168,137 @@ footer div.base {
 
 /* Titulo */
 .center{
-    text-align: center;
-    width: 800px;
+    width: 1100px;
     max-width: 100%;
     margin: 0 auto;
+    font-size: 18px;
+    padding: 20px 0;
+}
+.opcoesServicos article{
+    text-align: center;
+    width: 900px;
+    max-width: 100%;
+    margin: 50px auto;
 }
 .center h2{
     color:#FFBE51;
     text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
 
 }
-.center section.opcoes article .imagem{
+/* Servicos */
+.center section.opcoesServicos article .imagem{
     background-color: #B1B1B1;
-    width: 250px;
-    height: 250px;
+    width: 325px;
+    height: 325px;
     max-width: 100%;
     max-height: 100%;
 }
-.center section.opcoes article{
+.center section.opcoesServicos article{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.center section.opcoes article .content{
+.center section.opcoesServicos article .content{
     max-width: 50%;
 }
-.center section.opcoes article .text{
+.center section.opcoesServicos article .content p{
+    text-align: left;
+}
+.center section.opcoesServicos article .content a button{
+    float:left;
+    padding: 5px 100px;
+    border: none;
+    background-color: #FFBE51;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.center section.opcoesServicos article .text{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: black;
+    font-size: 30px;
 }
+.center section.opcoesServicos article .text h3{
+    text-transform: uppercase;
+}
+.center hr {
+    border: 3px solid #B1B1B1;
+}
+
+/* CONTATO */
+
+/* Formulario */
+.contatos .formulario h2{
+    color:#FFBE51;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: left;
+    margin: 0 0 50px 0;
+}
+.contatos .formulario .formContainer form input{
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 1px #B1B1B1 solid;
+    width: 100%;
+    padding: 5px;
+}
+.contatos .formulario #botaoContatos{
+    background-color: #FFBE51;
+    color:white;
+    border:none;
+}
+form #mensagem{
+    margin-bottom: 10px;
+    border: 1px #B1B1B1 solid;
+    font-family: 'Nunito',sans-serif;
+    color: #757575;
+    padding: 5px;
+}
+/* Contato */
+.contato {
+    color: black;
+    text-transform: uppercase;  
+
+}
+
+.container.contatos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+.container.contatos .contato ul{
+    padding:0;
+    margin-bottom: 40px;
+}
+.container.contatos .contato ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+.container.contatos .contato ul a {
+    text-decoration: none;
+    color: black;
+}
+.contatos iframe{
+    height: 40%;
+}
+body .contatoBody{
+    position: relative;
+}
+footer div.base.contatosFooter {
+    color: black;
+    width: 100%;
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 3px 0;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+

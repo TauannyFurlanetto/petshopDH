@@ -8,7 +8,7 @@ body{
     padding: 0;
     font-family: 'Nunito',sans-serif;
     color: #757575;
-    height: 100vh;
+    position: relative;
 }
 .container{
     width: 1100px;
@@ -116,10 +116,11 @@ header .container nav ul li{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
-.bottom .container div{
-    height: 355px;
-    width: 498px;
+.bottom .container div:first-of-type{
+    height: calc(355px*1);
+    width: calc(498px*1);
     max-width: 100%;
     max-height: 100%;
     background-position: center;
@@ -128,19 +129,20 @@ header .container nav ul li{
     text-align: center;
 }
 .bottom .container div:not(.text){
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 .bottom .container div.text{
     text-align: left;
+    max-width: 50%;
 }
 /* Footer */
+
 footer:not(.contatoFooter){
     background-color: #FFBE51;
     color: black;
     padding: 30px 0;
     text-transform: uppercase;
-    position: relative;
 }
 footer .container{
     margin-bottom: 80px;
@@ -213,6 +215,7 @@ footer:not(.contatoFooter) iframe{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .center section.opcoesServicos article .content{
     max-width: 50%;
@@ -235,6 +238,7 @@ footer:not(.contatoFooter) iframe{
     align-items: center;
     color: black;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 .center section.opcoesServicos article .text h3{
     text-transform: uppercase;
@@ -284,7 +288,7 @@ form #mensagem{
     justify-content: space-between;
     margin-bottom: 50px;
     flex-wrap: wrap;
-
+    gap: 20px;
 }
 .container.contatos .contato ul{
     padding:0;
@@ -354,16 +358,18 @@ form .checkBebidas:last-of-type{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.login .container img {
+.login:not(.cadastroSection) .container img {
     width: calc(543px*0.8);
     max-width: 100%;
+    height: calc(382px*0.8);
     margin: 0;
     padding: 0;
 }
-article.login {
-padding: 20px 20px 50px 20px;
+article.login:not(.cadastro) {
+padding: 20px 20px 80px 20px;
 box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
 text-align: center;
 }
@@ -382,19 +388,109 @@ article.login a {
     color:black;
     text-decoration: none;
 }
+.login h2, .cadastro h2{
+    color:#FFBE51;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 0 50px 0;
+}
+/* Cadastro */
+.cadastro {
+    width: 35%;
+}
 
+.login.cadastro {
+    padding: 20px 20px 10px 20px;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
 /* RESPONSIVIDADE */
-@media(max-width:880px){
+@media(max-width: 1224px){
+    body{
+        font-size: 18px;
+    }
+    .container {
+        width: 990px;
+    }
     header .container, .banner .container{
         justify-content: center;
     }
     .banner .container h2{
         text-align:center;
-        font-size: 25px;
+        font-size: 23px;
     }
+    .bottom .container{
+        justify-content: center;
+    }
+    .bottom .container div.text{
+        max-width: 100%;
+    }
+    .center section.opcoesServicos article{
+       gap:20px;
+    }
+    
+    
 }
-@media(max-width:465px){
+@media(max-width:998px){
+    footer .container .content{
+        justify-content: center;
+    }
+    footer .container .content .left{
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding:0;
+    }
+    footer .container .content .left .contato ul{
+        margin: 0 0 10px 0;
+        padding:0;
+    }
+    .center section.opcoesServicos article{
+        justify-content: center;
+    }
+    .center section.opcoesServicos article .text h3 {
+        text-align: left;
+    }
+    .container.contatos{
+        justify-content: center;
+    }
+    .contato{
+        text-align: center;
+    }
+    .login .container {
+        justify-content: center;
+        gap: 20px;
+    }
+    .login:not(.cadastroSection) .container img {
+        width: 80%;
+        height: 80%;
+}
+
+@media(max-width:520px){
+    .container.contatos {
+        width: 250px;
+    }
     header .container nav ul{
         display: none;
+    }
+    .banner .container div {
+        background-size: 100vw;
+    }
+    .bottom .container div:first-of-type{
+        background-size: 100vw;
+    }
+
+
+}
+@media(max-width:400px){
+    .center section.opcoesServicos article .content a button{
+        padding: 5px 50px;
+    }
+    .center section.opcoesServicos article .imagem{
+        width: 225px;
+        height: 225px;
+    }
+    .contato iframe{
+        width: 85%;
     }
 }

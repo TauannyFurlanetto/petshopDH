@@ -314,6 +314,76 @@ footer div.base.contatosFooter {
     bottom:0;
     left: 0;
 }
+/* Trabalhe conosco */
+form input:not([type=checkbox]), form textarea, form select{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 20px;
+    resize: none;
+}
+form input:not([type=checkbox], [type="file"]):focus, form textarea:focus, form select:focus{
+    background-color: #FFBE51;
+}
+form input:not([type=checkbox], [type="file"]):focus-visible, form textarea:focus-visible, form select:focus-visible{
+    outline-color: #757575;
+}
+form button {
+    background-color: #FFBE51;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+form button:hover{
+    background-color: #ffa200;
+}
+form button:active{
+    background-color: #a7731a;
+}
+form .checkBebidas {
+    margin: 5px 0;
+}
+form .checkBebidas:last-of-type{
+    margin-bottom: 30px;
+}
+
+/* Login */
+.login .container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login .container img {
+    width: calc(543px*0.8);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+article.login {
+padding: 20px 20px 50px 20px;
+box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+text-align: center;
+}
+.loginForm input{
+    width: 50%;
+    margin-left: 0;
+    padding: 0;
+    padding: 15px;
+}
+.loginForm button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+article.login a {
+    color:black;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
 @media(max-width:880px){
     header .container, .banner .container{
         justify-content: center;

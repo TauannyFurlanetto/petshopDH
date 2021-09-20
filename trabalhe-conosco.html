@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Trabalhe conosco </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trabalhe conosco</h1>
+        <form class="trabalheConoscoForm" enctype="multipart/form-data" method="GET">
+            <label for="nome-completo">Nome completo:</label>
+            <input type="text" name="nome" id="nome-completo" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="curriculo">Curriculo</label>
+            <input type="file" name="curriculo"id="curriculo" multiple accept="image/*, .pdf">
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" required maxlength="200"></textarea>
+
+            <label for="data-nascimento">Data de nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento" required>
+
+            <label for="carga-horaria">Carga horaria</label>
+            <select name="carga-horaria" id="carga-horaria" required>
+                <option selected disabled value="">Selecione uma opção</option>
+                <option value="Tempo Integral"> Tempo Integral</option>
+                <option value="Meio periodo"> Meio periodo</option>
+                <option value="Freelancer">Freelancer</option>
+            </select>
+            
+            <p>Prefere cafe ou chá?</p>
+            <div class="checkBebidas">
+                <input type="checkbox" name="preferenciaBebida" id="cafe">
+                <label for="cafe">Café</label>
+            </div>
+            <div class="checkBebidas">
+                <input type="checkbox" name="preferenciaBebida" id="cha">
+                <label for="cha">Chá</label>
+            </div>
+            <div class="checkBebidas">
+                <input type="checkbox" name="preferenciaBebida" id="outros">
+                <label for="outro">Outro</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

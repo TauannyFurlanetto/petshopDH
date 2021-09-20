@@ -464,6 +464,7 @@ article.login a {
     .login:not(.cadastroSection) .container img {
         width: 80%;
         height: 80%;
+    }
 }
 
 @media(max-width:520px){

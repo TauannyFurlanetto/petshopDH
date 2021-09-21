@@ -8,7 +8,6 @@ body{
     padding: 0;
     font-family: 'Nunito',sans-serif;
     color: #757575;
-    position: relative;
 }
 .container{
     width: 1100px;
@@ -141,7 +140,7 @@ header .container nav ul li{
 footer:not(.contatoFooter){
     background-color: #FFBE51;
     color: black;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     text-transform: uppercase;
 }
 footer .container{
@@ -171,9 +170,8 @@ footer div.base {
     width: 100%;
     background-color: #C4C4C4;
     text-align: center;
-    padding: 3px 0;
-    position: absolute;
-    bottom:0;
+    padding: 10px 0;
+
 }
 footer:not(.contatoFooter) iframe{
     max-width: 100%;
@@ -308,15 +306,18 @@ form #mensagem{
 body .contatoBody{
     position: relative;
 }
+footer div.base p{
+    margin: 0;
+}
+section.login, .container.contatos{
+    height: 72.3vh;
+}
 footer div.base.contatosFooter {
     color: black;
     width: 100%;
     background-color: #C4C4C4;
     text-align: center;
-    padding: 3px 0;
-    position: absolute;
-    bottom:0;
-    left: 0;
+    padding: 10px 0;
 }
 /* Trabalhe conosco */
 form input:not([type=checkbox]), form textarea, form select{
@@ -422,11 +423,12 @@ article.login a {
     .bottom .container{
         justify-content: center;
     }
-    .bottom .container div.text{
+    .bottom .container div.text {
         max-width: 100%;
     }
     .center section.opcoesServicos article{
        gap:20px;
+       text-align: center;
     }
     
     
@@ -465,8 +467,13 @@ article.login a {
         width: 80%;
         height: 80%;
     }
+    .bottom .container div.text{
+        max-width: 80%;
+    }
+    section.login, .container.contatos{
+        min-height: 150vh;
+    }
 }
-
 @media(max-width:520px){
     .container.contatos {
         width: 250px;
@@ -480,8 +487,18 @@ article.login a {
     .bottom .container div:first-of-type{
         background-size: 100vw;
     }
+    .center section.opcoesServicos article .content h3{
+        text-align: center;
+    }
+    section.login, .container.contatos{
+        min-height: 100vh;
+    }
 
-
+}
+@media (max-width: 460px){
+    section.login, .container.contatos{
+        min-height: 130vh;
+    }
 }
 @media(max-width:400px){
     .center section.opcoesServicos article .content a button{
